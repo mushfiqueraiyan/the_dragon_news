@@ -34,7 +34,7 @@ const SocialLogin = () => {
         </svg>
         Login with Google
       </button>
-      <button className="btn bg-black w-full mt-2 text-white border-black">
+      <button className="btn bg-gray-900 w-full mt-2 text-white border-gray-900">
         <svg
           aria-label="GitHub logo"
           width="16"
