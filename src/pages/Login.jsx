@@ -17,7 +17,7 @@ const Login = () => {
         console.log(res.user);
       })
       .catch((err) => {
-        alert("Error is :", err);
+        alert("Error is :", err.message);
       });
   };
 
