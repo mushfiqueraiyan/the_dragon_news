@@ -11,7 +11,7 @@ const LeftLayout = () => {
         {categories.map((category) => {
           return (
             <NavLink
-              key={category.div}
+              key={category.id}
               className={({ isPending, isActive }) =>
                 isPending
                   ? "pending.."

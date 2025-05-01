@@ -19,11 +19,11 @@ const Root = () => {
         </nav>
       </header>
 
-      <main className="grid grid-cols-12 mt-15">
+      <main className="grid grid-cols-12 mt-8">
         <section className="left-container col-span-3">
           <LeftContainer />
         </section>
-        <section className="content-container col-span-6">
+        <section className="content-container col-span-6 px-4">
           <Outlet />
         </section>
         <section className="right-container col-span-3">
