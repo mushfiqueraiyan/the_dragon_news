@@ -4,6 +4,9 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Career from "../pages/Career";
 import CategoryPage from "../pages/CategoryPage";
+import AuthProvider from "../pages/AuthProvider";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 export const route = createBrowserRouter([
   {
@@ -26,6 +29,20 @@ export const route = createBrowserRouter([
         path: "/category/:id",
         loader: () => fetch("/news.json").then((res) => res.json()),
         element: <CategoryPage />,
+      },
+    ],
+  },
+  {
+    path: "/auth",
+    element: <AuthProvider />,
+    children: [
+      {
+        path: "/auth/login",
+        element: <Login />,
+      },
+      {
+        path: "/auth/register",
+        element: <Register />,
       },
     ],
   },

@@ -20,13 +20,13 @@ const Root = () => {
       </header>
 
       <main className="grid grid-cols-12 mt-8">
-        <section className="left-container col-span-3">
+        <section className="left-container col-span-3 sticky top-3 h-fit">
           <LeftContainer />
         </section>
         <section className="content-container col-span-6 px-4">
           <Outlet />
         </section>
-        <section className="right-container col-span-3">
+        <section className="right-container col-span-3 sticky top-3 ">
           <RightContainer />
         </section>
       </main>
