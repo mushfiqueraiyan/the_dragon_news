@@ -79,7 +79,12 @@ const CategoryPage = () => {
                       ? news.details.slice(0, maxLength) + "...."
                       : news.details}
                   </p>
-                  <Link className="font-bold text-orange-400">Read More</Link>
+                  <Link
+                    to={`/news/${news.id}`}
+                    className="font-bold text-orange-400"
+                  >
+                    Read More
+                  </Link>
                 </div>
               </div>
             );

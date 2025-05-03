@@ -7,6 +7,7 @@ import CategoryPage from "../pages/CategoryPage";
 import AuthProvider from "../pages/AuthProvider";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import NewsDetails from "../pages/NewsDetails";
 
 export const route = createBrowserRouter([
   {
@@ -45,5 +46,10 @@ export const route = createBrowserRouter([
         element: <Register />,
       },
     ],
+  },
+  {
+    path: "/news/:id",
+    loader: () => fetch("/news.json").then((res) => res.json()),
+    element: <NewsDetails />,
   },
 ]);
